@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react'
+import React, { useEffect, useState } from 'react';
 import Dropdown from '../tools/Dropdown';
 
 function Nav() {
@@ -6,7 +6,7 @@ function Nav() {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    if (offset > 100) {
+    if (offset > 5) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -14,37 +14,50 @@ function Nav() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  let navbarClasses = ["navbar"];
+  let navbarClasses = ['myNavbar'];
   if (scrolled) {
-    navbarClasses.push("scrolled");
+    navbarClasses.push('scrolled');
   }
 
   const options = [
-    { label: 'About us', href: '/news' },
+    { label: 'About us', href: '/about' },
     { label: 'News', href: '#' },
     { label: 'Schedule', href: '#' },
     { label: 'Contact', href: '#' },
     // { label: 'Podcast', href: '#' }
   ];
+
   return (
-    <div className={navbarClasses.join(" ")}>
-        <div className="navLogo">
-          <a href="/">
-          <img src="logo.png" alt="" />
-          </a>
-        </div>
-        <div className="menu">
-          <Dropdown options={options}/>
-        </div>
+    <div className={navbarClasses.join(' ')}>
+      <div className="navLogo">
+        <a href="/">
+          <img src="logo.png" alt="Logo" />
+        </a>
+      </div>
+      <div className="menu">
+        <Dropdown options={options} />
+      </div>
+      <div className="navitemsSec">
+        <ul>
+        {
+          options.map((items, index)=>(
+            <li key={index}>
+            <a href={items.href}>{items.label}</a>
+            </li>
+          ))
+        }
+        </ul>
+
+        
+      </div>
     </div>
-  )
+  );
 }
 
-export default Nav
+export default Nav;

@@ -6,6 +6,214 @@
   margin: 0;
 }
 
+/* Navigation bar  */
+.myNavbar{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+background: whitesmoke;
+border-radius: 6px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.myNavbar.scrolled {
+background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+border-radius:0 16 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+width: 100%;
+}
+
+.navLogo img{
+  width: 70px;
+  height: auto;
+}
+.menu{
+  display: none;
+}
+
+.navitemsSec ul{
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  padding: ;
+}
+.navitemsSec a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* ABOUT SECTION  */
+/* SectionOne */
+
+
+.sectionOneContainer{
+  padding: 100px 0px 0px;
+}
+.background-container {
+  position: relative; 
+  width: 100%;      
+  height: 550px;
+  background-image: url("../public/bgPlateauJet.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 15, 15, 0.5);
+  color: white;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 150px 100px 10px;
+
+}
+.readmore{
+  animation: pulse 2s infinite ease-in-out alternate;
+}
+.readmore a{
+  color: white;
+  text-decoration: none;
+}
+.overlay p{
+    width: 600px; /* set a fixed width for demonstration purposes */
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  
+}
+
+  /* section Two  */
+  .sectionTwoContainer{
+    padding: 100px 100px;  
+  }
+  .gridContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-top: 50px;
+  }
+    .partHeader{
+      color: red;
+    }
+    /* src/Card.css */
+  .card {
+    width: 300px; /* Set the width of the card */
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: hidden; /* To ensure content stays inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a lifted effect */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Lift the card when hovered */
+  }
+  .cardImg{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .cardImg img {
+    width: 100%; /* Full width image */
+    height: 250px; /* Fixed height for the image */
+    object-fit: contain; /* Crop the image to fill the area */
+  }
+  
+  .card-content {
+    padding: 15px; /* Add padding inside the card */
+  }
+  
+  .cardTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Space between title and text */
+  }
+  
+  .cardContent {
+    font-size: 1rem;
+    color: #555; /* Lighter text color */
+  }
+  .card a{
+    color: black;
+  }
+  
+  /* Footer sections */
+ .footerholder{
+   background-color: black;
+   color: white;
+   padding-bottom: 20px;
+ } 
+.footerContainer{
+  color: white;
+  /* padding: 10px 20px; */
+  padding: 50px 0px;
+  padding-left: 100px;
+
+
+  /* text-align: center; */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.mediaplatforms a{
+  text-decoration: none;
+  color: white;
+}
+.mediaplatforms li{
+  list-style: none;
+}
+.mediaplatforms ul{
+  display: block;
+  gap: 20px;
+  align-items: center;
+}
+.footerNav ul{
+  list-style: none;
+}
+.footerNav a{
+  color: white;
+  text-decoration: none;
+}
+.copyrights{
+  text-align: center;
+}
+
+
+
+/* button  */
+
+button{
+  padding: 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px 10px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  margin: 20px 0px;
+  
+}
+
 
 /* back to top btn  */
 
@@ -67,36 +275,43 @@
     margin: 0px 0px;
     overflow: hidden;
   }
-  .navbar{
+  
+  .myNavbar{
     position: fixed;
-    width: 95%;
-    height: 80px;
+    width: 100%;
+    /* height: 80px; */
     left: 0;
     top: 0;
     z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
+    padding: 10px 20px;
 background: whitesmoke;
 border-radius: 6px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-/* backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px); */
 border: 1px solid rgba(255, 255, 255, 0.3);
   }
 
-.navbar.scrolled {
+.myNavbar.scrolled {
   background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-  border-radius: 16px;
+  border-radius:0 16 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
 }
+
   .navLogo img{
     width: 70px;
     height: auto;
+  }
+  .menu{
+    display: block;
+  }
+  .navitemsSec{
+    display: none;
   }
   button{
     padding: 5px 15px;
@@ -139,6 +354,15 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 70px 20px 10px;
 
   }
+  .overlay p{
+    width: 100%; /* set a fixed width for demonstration purposes */
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  
+}
   .readmore{
     animation: pulse 2s infinite ease-in-out alternate;
   }
@@ -152,12 +376,16 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   /* section Two  */
 .sectionTwoContainer{
   padding: 40px 20px 70px;
-
+  width: 99.5%;
+  margin: auto;
 }
+
 .gridContainer{
   display: grid;
-  grid-template-columns: (minmax(1, 1fr));
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
+  /* padding: 50px 0px 0px; */
+
 }
   .partHeader{
     color: red;
@@ -204,11 +432,21 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .card a{
   color: black;
 }
+
+/* Footer sections  */
+.footerholder{
+  padding-bottom: 10px;
+}
 .footerContainer{
   background-color: black;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 50px;
   text-align: center;
+  display: block;
+  padding-top: 30px;
+}
+.footerNav{
+  display: none;
 }
 .ContactLogo a{
   text-decoration: none;

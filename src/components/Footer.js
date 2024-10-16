@@ -4,21 +4,31 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { BsTwitterX } from "react-icons/bs";
 
 function Footer() {
+    const options = [
+        { label: 'About us', href: '/about' },
+        { label: 'News', href: '#' },
+        { label: 'Schedule', href: '#' },
+        { label: 'Contact', href: '#' },
+        // { label: 'Podcast', href: '#' }
+      ];
+      const currentYear = new Date().getFullYear();
   return (
-    <div>
+    <div className='footerholder'>
         <div className="footerContainer">
         <div className="ContactLogo"> 
-            <h3>Address</h3>
+        <h3>Address</h3>
            <p>
            Plateau Jets SC <br />
            info@plateaujetsSC.com <br />
            08151553780
            </p>
-                <h3>Social Media Platforms</h3>
+        </div>
+            <div className="mediaplatforms">
+            <h3>Social Media Platforms</h3>
                 <ul>
                     <li>
                     <a href="#">
-                    <FaFacebook style={{color:'blue'}} /> Facenook
+                    <FaFacebook style={{color:'blue'}} /> Facebook
                     </a>
                     </li>
                     <li>
@@ -35,9 +45,21 @@ function Footer() {
 
                 </ul>
             </div>
-            <p> &copy;2024 All right resevered. Designed by JomiahCreations</p>
+            <div className="footerNav">
+            <h3>Navigations</h3>
+            <ul>
+        {
+          options.map((items, index)=>(
+            <li key={index}>
+            <a href={items.href}>{items.label}</a>
+            </li>
+          ))
+        }
+        </ul>
+            </div>
             
         </div>
+            <p className='copyrights'> &copy; {currentYear}. All right resevered. Designed by JomiahCreations</p>
     </div>
   )
 }
