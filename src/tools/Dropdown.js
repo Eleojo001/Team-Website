@@ -15,16 +15,16 @@ function Dropdown({options}) {
   };
 
   return (
-    <div className="dropdown-container">
+    <div className="dropdowncontainer">
       {/* Button to toggle the dropdown */}
-      <div className="dropdown-button" onClick={toggleDropdown}>
+      <div className="dropdownbutton" onClick={toggleDropdown}>
       {isOpen ? <AiOutlineClose /> : <IoMenu />}
       </div>
 
       {/* Dropdown menu that shows/hides based on state */}
 
             {isOpen && (
-        <div className="dropdown-menu">
+        <div className="dropdownmenu">
           <ul>
             {options.map((option, index) => (
               <li key={index}>
