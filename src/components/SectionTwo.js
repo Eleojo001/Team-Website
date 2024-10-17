@@ -20,7 +20,7 @@ function SectionTwo() {
   };
   const recentNews = Data
     .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sort by date descending
-    .slice(0, 3); // Get the top 3 most recent news
+    .slice(0, 5); // Get the top 3 most recent news
 
   return (
     <div className='sectionTwoContainer'>
@@ -34,7 +34,7 @@ function SectionTwo() {
                   
                 <h3 className="cardTitle">  {item.title} </h3> <small> <CiClock2 /> {timeAgo(item.date)} </small>
                 <p className="cardContent"> {truncateContent(item.content, 20)} </p>
-                <a href="/news/:${item.id}">Read more</a>
+                <a href={`/news/${item.id}`}>Read more</a>
                 </div>
               </div>
             )

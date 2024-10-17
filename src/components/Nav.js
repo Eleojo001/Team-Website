@@ -37,7 +37,7 @@ function Nav() {
     <div className={navbarClasses.join(' ')}>
       <div className="navLogo">
         <a href="/">
-          <img src="logo.png" alt="Logo" />
+          <img src="/logo.png" alt="Logo" />
         </a>
       </div>
       <div className="menu">
