@@ -5,7 +5,6 @@ function SectionOne() {
     <div className='sectionOneContainer'>
     <div className="background-container">
       <div className="overlay">
-        {/* Overlay content here */}
         <h1>About us</h1>
         <p>Plateau Jet SC is a dynamic football club founded in 2022,
          with a bold vision: to nurture young talents and redefine the future of football.

@@ -4,6 +4,9 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+
 }
 
 /* Navigation bar  */
@@ -75,7 +78,7 @@ width: 100%;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(15, 15, 15, 0.5);
+  background-color: rgba(4, 4, 4, 0.5);
   color: white;
   text-align: left;
   font-family: "Poppins", sans-serif;
@@ -156,6 +159,24 @@ width: 100%;
   .card a{
     color: black;
   }
+  .viewmoreBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .viewmoreBtn button{
+    color: black;
+    background-color: transparent;
+    border-radius: 5px;
+  animation: pulse 2s infinite ease-in-out alternate;
+
+  }
+  .viewmoreBtn button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: none;
+  }
   
   /* Footer sections */
  .footerholder{
@@ -219,6 +240,97 @@ width: 100%;
   height: 400px;
   object-fit: cover;
   object-position: center;
+}
+.aboutContainer{
+  padding: 100px 100px 50px;
+}
+.aboutBg{
+background: rgb(36,6,0);
+background: linear-gradient(200deg, rgba(36,6,0,1) 34%, rgba(241,3,3,1) 100%);
+  height: 400px;
+  width: 100%;
+  position: relative;
+  padding: 50px;
+  color: white;
+  margin-bottom: 30px;
+}
+.aboutImg{
+  position: absolute;
+  top: 80px;
+  left:600px;
+  right: 80px;
+  /* background-image: url('../public/bgPlateauJet.jpg'); */
+  height: 400px;
+  width: auto;
+}
+.abtheader{
+  margin: 130px 60px;
+}
+.aboutImg img{
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
+}
+.aboutContent{
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: #555;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.leaders{
+  margin-bottom: 30px;
+}
+.aboutLeader{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.leaderCard{
+  position: relative;
+  height: 300px;
+  width: 300px;
+  max-width: 300px;
+}
+.leaderImage{
+  height: 100%;
+  width: 100%;
+}
+
+.leaderImage img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.LeaderInfo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.LeaderInfoText{
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px); 
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.leaderCard:hover .LeaderInfo {
+  opacity: 1;
+}
+.leaderCard:hover .LeaderInfoText {
+  opacity: 1;
+  transform: translateY(0); 
 }
 
 
@@ -340,7 +452,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px 10px;
     border: 1px solid white;
     background-color: transparent;
-    color: white;
+    color: black;
     margin: 20px 0px;
     
   }
@@ -486,6 +598,98 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .aboutContainer{
   padding: 100px 20px 50px;
 }
+.aboutBg{
+background: rgb(36,6,0);
+background: linear-gradient(200deg, rgba(36,6,0,1) 34%, rgba(241,3,3,1) 100%);
+  height: 200px;
+  width: 100%;
+  position: relative;
+  padding: 30px 30px 50px;
+  color: white;
+  margin-bottom: 50px;
+}
+.aboutImg{
+  position: absolute;
+  top: 90px;
+  left:70px;
+  right:40px;
+  /* background-image: url('../public/bgPlateauJet.jpg'); */
+  height: 140px;
+  width: auto;
+}
+.abtheader{
+  margin: 0px 0px;
+}
+.aboutImg img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.aboutContent{
+  column-count: 1;
+  column-gap: 30px;
+  column-rule: #555;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.readmore{
+  color: blcak;
+}
+.leaders{
+  margin: 40px 30px ;
+}
+/* .aboutLeader{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.leaderCard{
+  position: relative;
+  height: 300px;
+  width: 300px;
+  max-width: 300px;
+} */
+/* .leaderImage{
+  height: 100%;
+  width: auto;
+} */
+
+.leaderImage img{
+  /* object-fit: cover; */
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.LeaderInfo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.LeaderInfoText{
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px); 
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.leaderCard:hover .LeaderInfo {
+  opacity: 1;
+}
+.leaderCard:hover .LeaderInfoText {
+  opacity: 1;
+  transform: translateY(0); 
+}
+
 
 /* News details  */
 .newsDetailsContainer{
@@ -513,7 +717,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
 }
 .gobck button a{
-  text-decoration: none;
+  text-decoration:540px none;
   color: black;
 }
 
@@ -534,23 +738,23 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 @keyframes flip {
 	0% {
-		transform: perspective(400px) rotateY(0);
+		transform: perspective(540px) rotateY(0);
 		animation-timing-function: ease-out;
 	}
 	40% {
-		transform: perspective(400px) translateZ(150px) rotateY(170deg);
+		transform: perspective(540px) translateZ(150px) rotateY(170deg);
 		animation-timing-function: ease-out;
 	}
 	50% {
-		transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+		transform: perspective(540px) translateZ(150px) rotateY(190deg) scale(1);
 		animation-timing-function: ease-in;
 	}
 	80% {
-		transform: perspective(400px) rotateY(360deg) scale(.85);
+		transform: perspective(540px) rotateY(360deg) scale(.85);
 		animation-timing-function: ease-in;
 	}
 	100% {
-		transform: perspective(400px) scale(0.5);
+		transform: perspective(540px) scale(0.5);
 		animation-timing-function: ease-in;
 	}
 }

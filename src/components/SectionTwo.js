@@ -1,4 +1,4 @@
-import React,{ useEffect} from 'react'
+import React,{ useEffect, useState} from 'react'
 import { Data } from '../Api/Data'
 import { timeAgo } from './Date';
 import { TiWorldOutline } from "react-icons/ti";
@@ -8,6 +8,7 @@ import 'aos/dist/aos.css'
 
 
 function SectionTwo() {
+  const [numb, setNumb] = useState(3)
   useEffect(()=>{
     AOS.init({duration: 2000});
   },[]);
@@ -17,11 +18,13 @@ function SectionTwo() {
       return words.slice(0, wordLimit).join(" ") + "...";
     }
     return content;
-  };
+  }; 
   const recentNews = Data
     .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sort by date descending
-    .slice(0, 5); // Get the top 3 most recent news
-
+    .slice(0, numb); // Get the top 3 most recent news
+const Viewmore = () =>{
+return  setNumb(prevNumber => prevNumber + 3)
+}
   return (
     <div className='sectionTwoContainer'>
         <h1>Latest <span className='partHeader'>News</span></h1>
@@ -39,6 +42,9 @@ function SectionTwo() {
               </div>
             )
           })}
+        </div>
+        <div className="viewmoreBtn">
+        <button onClick={Viewmore}>Click me</button>
         </div>
     </div>
   )
