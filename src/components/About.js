@@ -15,7 +15,7 @@ function About() {
     <Nav/>
     <div className="aboutContainer">
       <div className="aboutBg">
-    <h1 className='abtheader'>About Us</h1>
+    <h1 className='abtheader'>About Uss</h1>
     <div className="aboutImg">
       <img src={image} alt="" />
     </div>
