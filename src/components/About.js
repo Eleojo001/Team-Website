@@ -9,6 +9,7 @@ function About() {
   const toggleBtn = () => {
     setIsExpanded(!isExpanded)
   }
+  const image = '/bgplateaujet.jpg'
   return (
     <div>
     <Nav/>
@@ -16,7 +17,7 @@ function About() {
       <div className="aboutBg">
     <h1 className='abtheader'>About Us</h1>
     <div className="aboutImg">
-      <img src="bgplateaujet.jpg" alt="" />
+      <img src={image} alt="" />
     </div>
 
       </div>
