@@ -16,7 +16,7 @@ function About() {
       <div className="aboutBg">
     <h1 className='abtheader'>About Us</h1>
     <div className="aboutImg">
-      <img src="/bgplateaujet.jpg" alt="" />
+      <img src="bgplateaujet.jpg" alt="" />
     </div>
 
       </div>
