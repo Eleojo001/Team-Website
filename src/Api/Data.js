@@ -12,14 +12,14 @@ export const Data = [
     title: "Team Manager Ben Shares Future Plans",
     content: "Mr. Ben, the team manager, outlined the plans for the upcoming season in a press conference yesterday. He spoke passionately about the need to strengthen the squad with new signings, particularly in defense and midfield. 'Our priority is to build on the success we've achieved so far, but we can't afford to be complacent,' Ben stated. He also hinted at a few surprise transfers, sparking excitement among fans. Besides player acquisitions, the manager highlighted the importance of improving the club's training facilities. 'We want to ensure our players have everything they need to perform at the highest level,' he said. Ben also mentioned the club's commitment to youth development, revealing plans to integrate more academy players into the senior team next season. With these bold moves, Plateau Jet SC seems poised for an exciting future both on and off the pitch.",
     date: "2024-09-10",
-    image: "/future.jfif"
+    image: "/future.jpeg"
   },
   {
     id: 3,
     title: "Youth Development at Plateau Jet SC",
     content: "The club continues its focus on nurturing young talents, which has been a cornerstone of Plateau Jet SC’s long-term strategy. This year, the youth academy has produced some of the most promising players in the league, with three academy graduates already making their senior team debuts. Under the guidance of Coach John Dantoro, the academy has become known for its ability to shape raw talent into professional athletes. 'Our philosophy is simple: develop players who are not just skilled on the field, but also disciplined and resilient off the field,' Bello said during a recent interview. One standout is 17-year-old midfielder Isegko Yakubu, who has impressed scouts with his vision and composure. With more young players ready to break through, the future looks bright for Plateau Jet SC, as the club invests heavily in its next generation of stars.",
     date: "2024-09-08",
-    image: "/youthDev.jfif"
+    image: "/youthDev.jpeg"
   },
   {
     id: 4,
