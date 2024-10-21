@@ -259,7 +259,7 @@ background: linear-gradient(200deg, rgba(36,6,0,1) 34%, rgba(241,3,3,1) 100%);
   top: 80px;
   left:600px;
   right: 80px;
-  background-image: url('../public/bgPlateauJet.jpeg');
+  /* background-image: url('../public/bgPlateauJet.jpeg'); */
   height: 400px;
   width: auto;
 }
@@ -636,24 +636,31 @@ background: linear-gradient(200deg, rgba(36,6,0,1) 34%, rgba(241,3,3,1) 100%);
 .readmore{
   color: blcak;
 }
+.aboutLeader{
+  margin: 20px;
+  padding: 0;
+}
 .leaders{
-  margin: 40px 30px ;
+  margin: 10px;
+  margin: auto;
+
 }
-/* .aboutLeader{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+ .aboutLeader{
+  display: flex;
+  justify-content: center;
+  /* gap: 10px; */
 }
+
 .leaderCard{
   position: relative;
-  height: 300px;
-  width: 300px;
+  height:200px;
+  width: 400px;
   max-width: 300px;
-} */
-/* .leaderImage{
+} 
+ .leaderImage{
   height: 100%;
   width: auto;
-} */
+}
 
 .leaderImage img{
   /* object-fit: cover; */

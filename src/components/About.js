@@ -22,84 +22,19 @@ function About() {
     
       </div>
           <p className='aboutContent'> {
-              Aboutdata.map((item)=>{
-                return <p> { isExpanded ? `${item.content}`: `${item.content.substring(0, 700)}...`} <a className='readmore' onClick={toggleBtn}>
+              
+             <p> { isExpanded ? `${Aboutdata.content}`: `${Aboutdata.content.substring(0, 700)}...`} <a className='readmore' onClick={toggleBtn}>
               
                 {isExpanded ? 'Show less' : 'Read more'}
               </a></p>
-              })
-
-            }
+}
             
     </p>
     <h1 className='space mke'>Our <span className='partHeader'>Leaders</span></h1>
 
 
     <div className="leaders">
-      <AboutLeaderCarousel/>
-    {/* <div className="aboutLeader">
-      <div className="leaderCard">
-        
-        <div className="leaderImage">
-          <img src="/govt.jpeg" alt="" />
-        </div>
-        <div className="LeaderInfo">
-        <div className="LeaderInfoText">
-          <h3>Govt. Caleb Mutfang</h3>
-          <a href="#">Read more</a>
-        
-        </div>
-        
-        </div>
-        
-      </div>
-      <div className="leaderCard">
-        
-        <div className="leaderImage">
-          <img src="/gm.jpeg" alt="" />
-        </div>
-        <div className="LeaderInfo">
-        <div className="LeaderInfoText">
-          <h3>  General manager <br />  Mr Fedinand</h3>
-          <a href="#">Read more</a>
-        
-        </div>
-        
-        </div>
-        
-      </div>
-      <div className="leaderCard">
-        
-        <div className="leaderImage">
-          <img src="/govt.jpeg" alt="" />
-        </div>
-        <div className="LeaderInfo">
-        <div className="LeaderInfoText">
-          <h3>Team Manager <br /> Mr Ben</h3>
-          <a href="#">Read more</a>
-        
-        </div>
-        
-        </div>
-        
-      </div>
-      <div className="leaderCard">
-        
-        <div className="leaderImage">
-          <img src="/govt.jpeg" alt="" />
-        </div>
-        <div className="LeaderInfo">
-        <div className="LeaderInfoText">
-          <h3>Sporting Director <br /> Mr. Yohan</h3>
-          <a href="#">Read more</a>
-        
-        </div>
-        
-        </div>
-        
-      </div>
-      
-    </div> */}
+      <AboutLeaderCarousel data={Aboutdata.leaders} intervals={4000}/>
 
       
     </div>
@@ -110,16 +45,15 @@ function About() {
     </div>
 
 
+    <h1 className='space mke'>Coaching <span className='partHeader'>Staff</span></h1>
+    <AboutLeaderCarousel data={Aboutdata.coaches} intervals={4000}/>
 
-    <h3>Coaching Staff</h3>
-    Our coaching team is spearheaded by:
-    <ul>
-    <li>Coach Celeb</li>
-    <li>Coach Dantoro</li>
-    </ul>
+    <p>
     Together, they work tirelessly to train, mentor, and guide our players to achieve their fullest potential, both technically and tactically.
 
-    <h3>Backroom Team</h3>
+    </p>
+
+    <h1 className='space mke'>Backroom <span className='partHeader'>Team</span></h1>
     We pride ourselves on having a complete and well-rounded backroom staff that provides comprehensive support to the team:
     <ul>
     <li>Medical Team: Ensures the players’ health and fitness.</li>
