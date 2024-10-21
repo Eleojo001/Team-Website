@@ -19,7 +19,7 @@ function About() {
     <div className="aboutImg">
       <img src={image} alt="" />
     </div>
-
+      <img src="/bgplateaujet.jpg" alt="" />
       </div>
           <p className='aboutContent'> {
               Aboutdata.map((item)=>{
