@@ -8,7 +8,7 @@ import 'aos/dist/aos.css'
 
 
 function SectionTwo() {
-  const [numb, setNumb] = useState(3)
+  const [numb, setNumb] = useState(4)
   useEffect(()=>{
     AOS.init({duration: 2000});
   },[]);
@@ -44,7 +44,7 @@ return  setNumb(prevNumber => prevNumber + 3)
           })}
         </div>
         <div className="viewmoreBtn">
-        <button onClick={Viewmore}>Click me</button>
+        <button onClick={Viewmore}>load me</button>
         </div>
     </div>
   )
