@@ -334,7 +334,126 @@ background: linear-gradient(200deg, rgba(36,6,0,1) 34%, rgba(241,3,3,1) 100%);
 }
 
 /* Section three  */
+.section3Container{
+  padding: 30px 100px 0px;
+}
+.resultfixtures{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.sect3fixture{
+  width: 70%;
+}
+.sect3SubHeader {
+  padding: 20px 20px;
+  margin: 30px 0px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  border-right-style: 5px solid black;
+}
 
+
+.resultSchedule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  padding: 15px 0px;
+  text-align: center;
+  /* font-size: 12px; */
+}
+
+.matchTime {
+  background-color: #707070;
+  color: whitesmoke;
+  padding: 5px;
+}
+
+.matchVenue {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.resultCard {
+  margin: 40px 0px;
+}
+
+.matchSchedule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 121px;
+  padding: 15px 0px;
+  text-align: center;
+  /* font-size: 12px; */
+}
+
+.matchTime {
+  background-color: #707070;
+  color: whitesmoke;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.matchVenue {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.scheduleCard {
+  margin: 40px 0px;
+}
+
+.Score {
+  margin-left: 10px;
+}
+
+.goals {
+  font-size: 8px;
+}
+
+.goalsDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 0px;
+  padding: 0px 20px;
+}
+
+/* all players page  */
+.allplayersPage{
+  margin: 100px 0px 30px;
+}
+.heading {
+  text-align: center;
+}
+.allPlayerscard{
+  border-radius: 10px;
+  overflow: hidden;
+}
+.allplayersGrid{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 30px;
+}
+.allpalyersImage{
+  height: 250px;
+  width: auto;
+  margin-bottom: 10px;
+}
+.allpalyersImage img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.allplayersdetails li{
+  list-style: none;
+}
 
 /* button  */
 
@@ -576,12 +695,21 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: black;
   color: white;
   padding: 10px 50px;
-  text-align: center;
+  /* text-align: center; */
   display: block;
   padding-top: 30px;
 }
+.footerFlex{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  /* font-size: 10px; */
+}
 .footerNav{
-  display: none;
+  display: block;
+}
+.footerNav li{
+  list-style: none;
 }
 .ContactLogo a{
   text-decoration: none;
@@ -737,11 +865,41 @@ background: linear-gradient(200deg, rgba(36,6,0,1) 34%, rgba(241,3,3,1) 100%);
   /* width: 99.5%;
   margin: auto; */
 }
+.resultfixtures {
+  display: block;
+}
+.sect3fixture{
+  width: 100%;
+  margin-bottom: 30px;
+}
 .sect3SubHeader{
-  padding: 10px 10px;
+  padding: 10px px;
   margin: 20px 0px;
   background-color:#f5f5f5;
   /* margin: 20px 0px; */
+}
+.resultSchedule{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  padding: 15px 0px ;
+  text-align: center;
+  /* font-size: 12px; */
+}
+.matchTime{
+  background-color: #707070;
+  color: whitesmoke;
+  padding: 5px;
+  border-radius: 5px;
+}
+.matchVenue{
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+.resultCard{
+  margin: 40px 0px;
 }
 .matchSchedule{
   display: flex;
@@ -765,6 +923,26 @@ background: linear-gradient(200deg, rgba(36,6,0,1) 34%, rgba(241,3,3,1) 100%);
 }
 .scheduleCard{
   margin: 40px 0px;
+}
+.Score{
+  margin-left: 10px;
+}
+
+.goals{
+  font-size: 8px;
+}
+.goalsDiv{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  margin-top: 0px;
+  padding: 0px 20px;
+}
+
+/* Terms AND Conditions */
+.termCondition{
+  margin-top: 100px;
+  padding: 20px;
 }
 
 }

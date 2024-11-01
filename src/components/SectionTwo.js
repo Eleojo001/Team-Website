@@ -44,7 +44,7 @@ return  setNumb(prevNumber => prevNumber + 3)
           })}
         </div>
         <div className="viewmoreBtn">
-        <button onClick={Viewmore}>load me</button>
+        <button onClick={Viewmore}>load more</button>
         </div>
     </div>
   )

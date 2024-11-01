@@ -26,7 +26,10 @@ function About() {
              <p> { isExpanded ? `${Aboutdata.content}`: `${Aboutdata.content.substring(0, 700)}...`} <a className='readmore' onClick={toggleBtn}>
               
                 {isExpanded ? 'Show less' : 'Read more'}
-              </a></p>
+              </a>
+              <p><a href="/terms&conditions">See Terms and Conditions</a></p>
+              </p>
+              
 }
             
     </p>

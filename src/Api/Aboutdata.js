@@ -1,6 +1,6 @@
 export const Aboutdata = {
-        id:'about',
-        content:`Plateau Jet SC is a dynamic football club with roots that trace back to its founding in 2022. The club was established with a bold and innovative vision: to nurture young talents and redefine the future of football, not just in Nigeria but across the African continent. Based in the heart of Plateau State, Nigeria, Plateau Jet SC stands as a beacon of hope for aspiring footballers who dream of a brighter future in the sport. The club has quickly gained recognition for its ambitious goals, strategic partnerships, and forward-thinking approach, especially in a country where football is more than just a sport—it is a way of life. Football in Nigeria has always been a source of pride and joy for millions. It is a unifying force, bringing people of different backgrounds, cultures, and communities together. For Plateau Jet SC, this cultural significance is central to its mission. The club is more than just a place where players hone their skills—it is a platform where dreams take flight. The founders of Plateau Jet SC understood the enormous potential of young footballers in Nigeria, particularly those in Plateau State, and they were determined to create an environment that fosters growth, excellence, and success. Their objective was simple yet profound: to give young talents the opportunity to thrive in an organized, professional, and supportive setting.
+  id: "about",
+  content: `Plateau Jet SC is a dynamic football club with roots that trace back to its founding in 2022. The club was established with a bold and innovative vision: to nurture young talents and redefine the future of football, not just in Nigeria but across the African continent. Based in the heart of Plateau State, Nigeria, Plateau Jet SC stands as a beacon of hope for aspiring footballers who dream of a brighter future in the sport. The club has quickly gained recognition for its ambitious goals, strategic partnerships, and forward-thinking approach, especially in a country where football is more than just a sport—it is a way of life. Football in Nigeria has always been a source of pride and joy for millions. It is a unifying force, bringing people of different backgrounds, cultures, and communities together. For Plateau Jet SC, this cultural significance is central to its mission. The club is more than just a place where players hone their skills—it is a platform where dreams take flight. The founders of Plateau Jet SC understood the enormous potential of young footballers in Nigeria, particularly those in Plateau State, and they were determined to create an environment that fosters growth, excellence, and success. Their objective was simple yet profound: to give young talents the opportunity to thrive in an organized, professional, and supportive setting.
 
 Plateau Jet SC is proudly sponsored by the Plateau State government, which plays an instrumental role in ensuring that the club has the resources, infrastructure, and financial support needed to succeed. This sponsorship is not just a financial arrangement; it represents a commitment by the government to invest in the future of the youth and the broader football ecosystem in the region. The government’s involvement is a testament to the belief that Plateau Jet SC can produce world-class footballers who will go on to represent Nigeria on both the national and international stage.
 
@@ -21,33 +21,51 @@ The club’s leadership is also exploring the possibility of launching a women�
 As Plateau Jet SC continues to grow, its impact will undoubtedly be felt far and wide. The club’s vision of nurturing young talents and redefining the future of football is already becoming a reality, and its influence on the next generation of Nigerian footballers cannot be overstated. The club is not just building a team; it is building a legacy—one that will inspire, uplift, and transform lives for years to come.
 
 In conclusion, **Plateau Jet SC** is more than just a football club. It is a symbol of hope, progress, and potential. It is a place where dreams are nurtured, where young talents are given the tools to succeed, and where the future of football is being shaped, one player at a time. With the support of the government, the dedication of its staff, and the passion of its players, Plateau Jet SC is on a path to greatness, and the world is watching.`,
-leaders:[
+  leaders: [
     {
-      name: 'Govt. Caleb Mutfang',
-      image: '/govt.jpeg',
+      name: "Govt. Caleb Mutfang",
+      image: "/govt.jpeg",
     },
     {
-      name: 'General Manager Mr. Ferdinand',
-      image: '/gm.jpeg',
+      name: "General Manager Mr. Ferdinand",
+      image: "/gm.jpeg",
     },
     {
-      name: 'Managemnt Member',
-      image: '/dunka.jpeg',
+      name: "Managemnt Member",
+      image: "/dunka.jpeg",
     },
     {
-      name: 'Managemnt Member',
-      image: '/Demshak.jpeg',
+      name: "Managemnt Member",
+      image: "/Demshak.jpeg",
     },
     // Add more leaders as needed
   ],
   coaches: [
     {
-        name: 'Dantoro John',
-        image: '/dantoro.jpeg',
-      },
-      {
-        name: 'Festus Ukpebor',
-        image: '/festus.jpeg',
-      },
-  ]
-}
+      name: "Dantoro John",
+      image: "/dantoro.jpeg",
+    },
+    {
+      name: "Festus Ukpebor",
+      image: "/festus.jpeg",
+    },
+  ],
+  allpayers: [
+    {
+      name: "Dnatoro John",
+      age: "20",
+      stateoforigin: "Kogi State",
+      formerclub: "MightyJet Fc Internation, Jos",
+      image: "/dantoro.jpeg",
+      positon: 'Center Forward',
+      strongfoot:'Right'
+    },
+    {
+      name: "Dnatoro John",
+      age: "20",
+      stateoforigin: "Kogi State",
+      formerclub: "MightyJet Fc Internation, Jos",
+      image: "/dantoro.jpeg",
+    },
+  ],
+};
