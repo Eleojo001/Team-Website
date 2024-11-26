@@ -35,20 +35,18 @@ function Footer() {
               <h4>Navigations</h4>
 
               <div className="footerNavholder">
-
-              {options.map((items, index) => (
-                <li key={index}>
-                  <a href={items.href}>{items.label}</a>
-                </li>
-              ))}
+                {options.map((items, index) => (
+                  <li key={index}>
+                    <a href={items.href}>{items.label}</a>
+                  </li>
+                ))}
               </div>
-
             </div>
             <div className="mediaplatforms">
               <h4>Social Media</h4>
               <div className="mediaLink">
                 <li>
-                  <a href="#">
+                  <a href="https://www.facebook.com/profile.php?id=61551130436355">
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                     {/* <FaFacebook style={{ color: "#22d55e" }} /> Facebook */}
                     <FaSquareFacebook style={{ color: "#0865fe" }} /> Facebook
@@ -65,7 +63,7 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.tiktok.com/@plateaujets.sc">
                     <SiTiktok />
                     Tiktok
                   </a>
