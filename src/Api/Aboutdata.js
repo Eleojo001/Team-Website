@@ -31,13 +31,18 @@ In conclusion, **Plateau Jet SC** is more than just a football club. It is a sym
       image: "/gm.jpeg",
     },
     {
-      name: "Managemnt Member",
+      name: "Team Manager Bewarang Ben Yusuf",
       image: "/dunka.jpeg",
     },
     {
       name: "Managemnt Member",
       image: "/Demshak.jpeg",
     },
+    {
+      name: "Managemnt Member",
+      image: "/dunka.jpeg",
+    },
+
     // Add more leaders as needed
   ],
   coaches: [
@@ -57,8 +62,8 @@ In conclusion, **Plateau Jet SC** is more than just a football club. It is a sym
       stateoforigin: "Kogi State",
       formerclub: "MightyJet Fc Internation, Jos",
       image: "/dantoro.jpeg",
-      positon: 'Center Forward',
-      strongfoot:'Right'
+      positon: "Center Forward",
+      strongfoot: "Right",
     },
     {
       name: "Dnatoro John",

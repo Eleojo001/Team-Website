@@ -1,17 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Myslider.css'; // Import your CSS file for styling
 
-const leaders = [
-  {
-    name: 'Govt. Caleb Mutfang',
-    image: '/govt.jpeg',
-  },
-  {
-    name: 'General Manager Mr. Ferdinand',
-    image: '/gm.jpeg',
-  },
-  // Add more leaders as needed
-];
 
 const AboutLeaderCarousel = ( {data, intervals}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,7 +14,7 @@ const AboutLeaderCarousel = ( {data, intervals}) => {
 
   // Function to go to the previous slide
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + data.length) % leaders.length);
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
   };
   const toggleInfo = () => {
     setShowInfo(!showInfo);

@@ -2,6 +2,11 @@ import React from 'react'
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BsTwitterX } from "react-icons/bs";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { SiTiktok } from "react-icons/si";
+
+
+
 
 function Footer() {
     const options = [
@@ -14,53 +19,68 @@ function Footer() {
       const currentYear = new Date().getFullYear();
   return (
     <div className="footerholder">
-      <div className="footerContainer">
-        <div className="footerFlex">
-          <div className="ContactLogo">
-            <h3>Address</h3>
-            <p>
-              Plateau Jets SC <br />
-              info@plateaujetsSC.com <br />
-              08151553780
-            </p>
+      <div className=" footercontainerflex">
+        <div className="footerContainer">
+          <div className="footerFlex">
+            <div className="ContactLogo">
+              <h4>Address</h4>
+              <p>
+                Plateau Jets SC <br />
+                info@plateaujetsSC.com <br />
+                08151553780
+              </p>
+            </div>
+
+            <div className="footerNav">
+              <h4>Navigations</h4>
+
+              <div className="footerNavholder">
+
+              {options.map((items, index) => (
+                <li key={index}>
+                  <a href={items.href}>{items.label}</a>
+                </li>
+              ))}
+              </div>
+
+            </div>
+            <div className="mediaplatforms">
+              <h4>Social Media</h4>
+              <div className="mediaLink">
+                <li>
+                  <a href="#">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    {/* <FaFacebook style={{ color: "#22d55e" }} /> Facebook */}
+                    <FaSquareFacebook style={{ color: "#0865fe" }} /> Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <IoLogoWhatsapp style={{ color: "#22d55e" }} /> Whatsapp
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <BsTwitterX /> Twitter
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <SiTiktok />
+                    Tiktok
+                  </a>
+                </li>
+              </div>
+            </div>
           </div>
 
-          <div className="mediaplatforms">
-            <h3>Social Media</h3>
-            
-              <li>
-                <a href="#">
-                  <FaFacebook style={{ color: "blue" }} /> Facebook
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <IoLogoWhatsapp style={{ color: "green" }} /> Whatsapp
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <BsTwitterX /> Twitter
-                </a>
-              </li>
-            
-          </div>
-        </div>
-        <div className="footerNav">
-          <h3>Navigations</h3>
-          
-            {options.map((items, index) => (
-              <li key={index}>
-                <a href={items.href}>{items.label}</a>
-              </li>
-            ))}
-          
+          <p className="copyrights">
+            {" "}
+            &copy; {currentYear}. All right resevered. Designed by
+            JomiahCreations
+          </p>
         </div>
       </div>
-      <p className="copyrights">
-        {" "}
-        &copy; {currentYear}. All right resevered. Designed by JomiahCreations
-      </p>
     </div>
   );
 }
