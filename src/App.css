@@ -766,13 +766,23 @@ background: linear-gradient(200deg, rgba(36,6,0,1) 34%, rgba(241,3,3,1) 100%);
 .readmore{
   color: blcak;
 }
+.aboutCouches{
+  display: flex;
+    justify-content: center;
+    align-items: center
+}
 .aboutLeader{
   margin: 20px;
   padding: 0;
+  
 }
 .leaders{
   margin: 10px;
   margin: auto;
+  margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center
 
 }
  .aboutLeader{
@@ -785,7 +795,7 @@ background: linear-gradient(200deg, rgba(36,6,0,1) 34%, rgba(241,3,3,1) 100%);
   position: relative;
   height:200px;
   width: 400px;
-  max-width: 300px;
+  max-width: 300px;;
 } 
  .leaderImage{
   height: 100%;

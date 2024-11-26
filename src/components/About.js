@@ -49,7 +49,9 @@ function About() {
 
 
     <h1 className='space mke'>Coaching <span className='partHeader'>Staff</span></h1>
-    <AboutLeaderCarousel data={Aboutdata.coaches} intervals={4000}/>
+        <div className="aboutCouches">
+        <AboutLeaderCarousel data={Aboutdata.coaches} intervals={4000} />
+        </div>
 
     <p>
     Together, they work tirelessly to train, mentor, and guide our players to achieve their fullest potential, both technically and tactically.
