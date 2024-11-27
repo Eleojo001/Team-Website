@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Dropdown from '../tools/Dropdown';
+import { NavData } from '../Api/Navdata';
 
 function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -27,34 +28,30 @@ function Nav() {
 
   const options = [
     { label: 'About us', href: '/about' },
-    { label: 'News', href: '#' },
-    { label: 'Schedule', href: '#' },
+    { label: 'News', href: '/news' },
+    { label: 'Schedule', href: '/schedule' },
     { label: 'Contact', href: '#' },
     // { label: 'Podcast', href: '#' }
   ];
 
   return (
-    <div className={navbarClasses.join(' ')}>
+    <div className={navbarClasses.join(" ")}>
       <div className="navLogo">
         <a href="/">
           <img src="/logo.png" alt="Logo" />
         </a>
       </div>
       <div className="menu">
-        <Dropdown options={options} />
+        <Dropdown options={NavData} />
       </div>
       <div className="navitemsSec">
         <ul>
-        {
-          options.map((items, index)=>(
+          {NavData.map((items, index) => (
             <li key={index}>
-            <a href={items.href}>{items.label}</a>
+              <a href={items.href}>{items.label}</a>
             </li>
-          ))
-        }
+          ))}
         </ul>
-
-        
       </div>
     </div>
   );

@@ -4,18 +4,19 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { BsTwitterX } from "react-icons/bs";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { SiTiktok } from "react-icons/si";
+import { NavData } from '../Api/Navdata';
 
 
 
 
 function Footer() {
-    const options = [
-        { label: 'About us', href: '/about' },
-        { label: 'News', href: '#' },
-        { label: 'Schedule', href: '#' },
-        { label: 'Contact', href: '#' },
-        // { label: 'Podcast', href: '#' }
-      ];
+  const options = [
+    { label: "About us", href: "/about" },
+    { label: "News", href: "/news" },
+    { label: "Schedule", href: "/schedule" },
+    { label: "Contact", href: "#" },
+    // { label: 'Podcast', href: '#' }
+  ];
       const currentYear = new Date().getFullYear();
   return (
     <div className="footerholder">
@@ -35,7 +36,7 @@ function Footer() {
               <h4>Navigations</h4>
 
               <div className="footerNavholder">
-                {options.map((items, index) => (
+                {NavData.map((items, index) => (
                   <li key={index}>
                     <a href={items.href}>{items.label}</a>
                   </li>

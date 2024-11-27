@@ -6,6 +6,9 @@ import NewsDetails from './components/NewsDetails';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Termsconditions from './components/Termsconditions';
 import Allplayers from './components/Allplayers';
+import News from './components/News';
+import Schedule from './components/Schedule';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -18,6 +21,9 @@ function App() {
           <Route path="/news/:id" element={<NewsDetails />} />
           <Route path="/allplayers" element={<Allplayers />} />
           <Route path="/terms&conditions" element={<Termsconditions />} />
+          <Route path='/news' element={<News />} />
+          <Route path='/schedule' element={<Schedule/>}/>
+          <Route path='/contact' element={<Contact/>}/>
         </Routes>
       </BrowserRouter>
     </div>
