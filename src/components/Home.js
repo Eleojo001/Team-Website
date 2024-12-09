@@ -5,6 +5,7 @@ import SectionTwo from './SectionTwo'
 import Footer from './Footer'
 import BackToTop from '../tools/BackToTop'
 import SectionThree from './SectionThree'
+import Sectionfour from './Sectionfour'
 
 function Home() {
   return (
@@ -12,7 +13,8 @@ function Home() {
         <Nav/>
         <SectionOne/>
         <SectionThree/>
-        <SectionTwo/>
+      <SectionTwo />
+      <Sectionfour/>
         <Footer/>
         <BackToTop/>
     </div>

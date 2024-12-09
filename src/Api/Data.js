@@ -65,8 +65,8 @@ More grease to your elbow MON | OON ❤🎉👏
   },
   {
     id: 6,
-    title: `Plateau Jets SC 🆚  Kwara Football Academy`,
-    content: `TUNE IN ALERT
+    title: `TUNE IN ALERT`,
+    content: `
 
 Join Mr. Mbum M. Ferdinand, General Manager of Mighty Jets Int'l FC, Jos, on Trust Television TODAY at 10:00-10:30 am.
 
